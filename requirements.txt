@@ -1,4 +1,6 @@
+st-aggrid
 streamlit
 pandas
 openpyxl
 pyngrok
+
