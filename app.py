@@ -9,7 +9,7 @@ def load_data(file_path):
     df = pd.read_excel(file_path)
     return df
 
-file_path = "D:/昆明城市学院/昆明城市学院计科研究院/2025.06.11-KMCC-0929.xlsx"
+file_path = "student.xlsx"
 df = load_data(file_path)
 
 st.title("🎓 学生成绩筛选系统")
@@ -125,4 +125,5 @@ if st.button("导出结果到Excel"):
         data=excel_data,
         file_name="筛选结果.xlsx",  # 默认文件名，用户可自己改保存位置
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
     )
