@@ -3,5 +3,6 @@ streamlit
 pandas
 openpyxl
 pyngrok
+xlsxwriter
 
 
