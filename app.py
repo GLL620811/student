@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # 读取 Excel 文件
-file_path = "D:/昆明城市学院/昆明城市学院计科研究院/2025.06.11-KMCC-0929.xlsx"  # 修改为你的文件路径
+file_path = "student.xlsx"  # 修改为你的文件路径
 df = pd.read_excel(file_path)
 
 st.title("🎓 学生成绩筛选系统")
@@ -81,3 +81,4 @@ if st.button("导出结果到Excel"):
     save_path = "筛选结果.xlsx"
     filtered_df.to_excel(save_path, index=False)
     st.success(f"✅ 已导出到 {save_path}")
+
